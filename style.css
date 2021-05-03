@@ -1,0 +1,165 @@
+
+p {
+   color: #4c4a37; font-family: 'Source Sans Pro', sans-serif; font-size: 25px; line-height: 32px; margin: 0 0 24px;
+   padding-left: 15px;
+}
+
+img {
+    cborder: 25px solid #fafafa;
+    margin-top: 10px;
+    height: 80%;
+    width:80%;
+    position: relative;
+    left: 15xp;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 3px 3px 6px 4px #888;
+    -moz-box-shadow: 3px 3px 6px 4px #888;
+    box-shadow: 3px 3px 6px 4px #888;
+}
+.prv {
+ text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.prv:hover {
+ text-align: center;
+  background-color: rgb(88, 88, 88);
+  color: black;
+}
+.nxt{
+    padding-right: 20px;
+}
+#algn{
+    text-align: center;
+    font-size: 20px;
+}
+.previous {
+    text-align: center;
+  background-color: #acabab;
+  color: black;
+}
+.border_plus{ /* block background */
+  background-color:#eee;
+}
+.border_plus .btn{ /* general */
+  background:transparent;
+}
+
+.border_plus .btn-1{
+  position: relative;
+  overflow:hidden;
+}
+.border_plus .btn-1:before{
+  content:'';
+  display:block;
+  border:1px solid #000;
+  width:calc(100% - 2px);
+  height:calc(100% - 2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.border_plus .btn-1 span:before,
+.border_plus .btn-1 span:after{
+  content:'';
+  display:block;
+  width: 10px;
+  height: 10px;
+  border-radius:6px;
+  border:1px solid #000;
+  background-color:#eee;
+  position: absolute;
+  transition:.4s;
+}
+.border_plus .btn-1 .deco_top:before{
+  top: -6px;
+  left: -6px;
+}
+.border_plus .btn-1 .deco_top:after{
+  top: -6px;
+  right: -6px;
+}
+.border_plus .btn-1 .deco_bottom:before{
+  bottom: -6px;
+  left: -6px;
+}
+.border_plus .btn-1 .deco_bottom:after{
+  bottom: -6px;
+  right: -6px;
+}
+.border_plus .btn-1:hover{
+  background-color:#000;
+  color:#fff;
+}
+.btn{
+  flex: 1 auto;
+  margin:5px;
+  padding:10px 25px;
+  text-align:center;
+  background:#eee;
+  transition: all 0.5s ease-out;
+  cursor:crosshair;
+}
+
+.border_plus .btn-1:hover span:before,
+.border_plus .btn-1:hover span:after{
+  width: 12px;
+  height: 12px;
+}
+h1 {
+    text-align:center;
+  color: #7c795d; font-family: 'Trocchi', serif; font-size: 55px; font-weight: normal; line-height: 48px; margin: 0;
+}
+body {
+	background: linear-gradient(-45deg, #bbb8b8, #ffffff, #f1f1f1, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+a {
+  color: rgb(71, 87, 194);
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
+}
+
+a:hover {
+  color: #457DFB;
+  right: 0;
+  text-decoration: none;
+}
+
+a:hover:after {
+  border-color: #457DFB;
+  right: 0;
+}
+
+a:after {
+  border-radius: 1em;
+  border-top: .1em solid #2F56B0;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1),
+              border-color .4s ease-out;
+}
+
+a:hover:after {
+right: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

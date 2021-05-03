@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-modules.app = 
 app.use(express.static(__dirname))
 
 app.get('/', (req, res) => {
